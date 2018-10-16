@@ -19,9 +19,7 @@ services:
   sparkApp:
     image: gettyimages/spark
     volumes:
-      - type: "bind"
-        source: "./dockerVol"
-        target: "/sparkJob"
+    - ~/dockerVol:/sparkJob
     links:
     - mysqlDB:mysql
     - redisDB:redis
