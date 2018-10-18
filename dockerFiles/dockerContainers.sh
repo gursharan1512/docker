@@ -3,4 +3,4 @@
 	 set -e 
 ##
 docker-compose up -d
-docker exec -it sharanghotra15121512_sparkApp_1 bash
+docker exec -it sharanghotra15121512_sparkApp_1 spark-submit --class test sparkJob/dockerRedisMysql2WithSaveToTextFile.jar
