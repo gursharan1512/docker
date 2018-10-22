@@ -20,3 +20,4 @@ gcloud compute ssh --zone $VMZone $VMName --command 'chmod +x dockerSetup.sh && 
 gcloud compute ssh --zone $VMZone $VMName --command 'docker-compose up -d'
 cd ~
 rm -r dockerFiles
+rm dockerVM.sh
