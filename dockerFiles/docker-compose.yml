@@ -19,7 +19,7 @@ services:
   sparkApp:
     image: gettyimages/spark
     volumes:
-    - ~/dockerVol:/sparkJob
+    - ~/dockerVol:/usr/spark-2.3.1/sparkJob
     links:
     - mysqlDB:mysql
     - redisDB:redis
